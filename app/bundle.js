@@ -23319,9 +23319,9 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	var Link = function Link(_ref) {
-		var active = _ref.active;
-		var children = _ref.children;
-		var _onClick = _ref.onClick;
+		var active = _ref.active,
+		    children = _ref.children,
+		    _onClick = _ref.onClick;
 	
 		if (active) {
 			return _react2.default.createElement(
@@ -23480,8 +23480,8 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	var TodoList = function TodoList(_ref) {
-		var todos = _ref.todos;
-		var onTodoClick = _ref.onTodoClick;
+		var todos = _ref.todos,
+		    onTodoClick = _ref.onTodoClick;
 		return _react2.default.createElement(
 			'ul',
 			null,
@@ -23525,13 +23525,13 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	var Todo = function Todo(_ref) {
-		var onCLick = _ref.onCLick;
-		var completed = _ref.completed;
-		var text = _ref.text;
+		var onClick = _ref.onClick,
+		    completed = _ref.completed,
+		    text = _ref.text;
 		return _react2.default.createElement(
 			'li',
 			{
-				onCLick: onCLick,
+				onClick: onClick,
 				style: {
 					textDecoration: completed ? 'line-through' : 'none'
 				}
@@ -23541,7 +23541,7 @@
 	};
 	
 	Todo.PropTypes = {
-		onCLick: _react.PropTypes.func.isRequired,
+		onClick: _react.PropTypes.func.isRequired,
 		completed: _react.PropTypes.bool.isRequired,
 		text: _react.PropTypes.string.isRequired
 	};
