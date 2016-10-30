@@ -1,7 +1,8 @@
 import React from 'react';
 import Footer from './Footer';
-import AddTodo from '../components/AddTodo.js';
 import VisibleTodoList from '../containers/VisibleTodoList';
+import AddTodo from '../containers/AddTodo';
+require('./app.scss');
 
 const App = () => (
 	<div>
